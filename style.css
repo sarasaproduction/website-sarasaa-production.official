@@ -394,3 +394,25 @@ footer a {
     letter-spacing: 1px;
     text-transform: uppercase; /* Bikin tulisan jabatan huruf besar semua */
 }
+/* 🌟 PAS LAYAR UKURAN HP (MOBILE) 🌟 */
+@media screen and (max-width: 600px) {
+    .crew-container {
+        gap: 25px; /* Jarak antar kartu ke bawah biar gak nempel */
+        padding: 40px 15px; /* Sisi kanan kiri agak dirapetin dikit biar pas di HP */
+    }
+
+    .crew-card {
+        /* 🌟 KUNCINYA DI SINI: Set 100% biar isi 1 kartu penuh per baris ala BTS! */
+        flex: 0 0 100%; 
+        max-width: 100%; /* Biar kartunya melebar sempurna mengikuti lebar HP */
+    }
+
+    .crew-photo {
+        height: 280px; /* Tingginya dinaikin dikit pas di HP biar fotonya kelihatan lebih puas dan gak gepeng */
+    }
+    
+    .crew-section h2 {
+        font-size: 1.8rem; /* Ukuran font judul meet our crew agak dikecilkan biar gak offside di layar HP */
+        padding-top: 100px;
+    }
+}
